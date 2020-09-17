@@ -160,7 +160,8 @@ else if(idOfButton === 'equals') {
         }
         else if(action === '-') {
             if(nextValue === '0') {
-                display.innerHTML = currentValue * -parseFloat(display.innerHTML)
+                display.innerHTML = currentValue * -parseFloat(display.innerHTML);
+                currentValue = 0;
             }
             else {
             display.innerHTML = currentValue - parseFloat(display.innerHTML)

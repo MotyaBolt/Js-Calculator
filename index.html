@@ -1,39 +1,176 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>JavaScript Calculator</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
-        <link rel="stylesheet" href="main.css">
-        
-    </head>
-    <body onload="showDefault()">
-        <div id="container">
-            <div id="main">
-                <div id="display"></div>
-                <div id="buttons">
-                        <button class="buttons"  onclick="showOnDisplay('nine')" value="9" type="button" id="nine">9</button>
-                        <button class="buttons"  onclick="showOnDisplay('eight')" value="8" type="button" id="eight">8</button>
-                        <button class="buttons"  onclick="showOnDisplay('seven')" value="7" type="button" id="seven">7</button>
-                        <button class="buttons"  onclick="calculateVal('add')" value="+" type="button" id="add">+</button>
-                        <button class="buttons"  onclick="showOnDisplay('six')" value="6" type="button" id="six">6</button>
-                        <button class="buttons"  onclick="showOnDisplay('five')" value="5" type="button" id="five">5</button>
-                        <button class="buttons"  onclick="showOnDisplay('four')" value="4" type="button" id="four">4</button>
-                        <button class="buttons"  onclick="calculateVal('subtract')" value="-" type="button" id="subtract">-</button>
-                        <button class="buttons"  onclick="showOnDisplay('three')" value="3" type="button" id="three">3</button>
-                        <button class="buttons"  onclick="showOnDisplay('two')" value="2" type="button" id="two">2</button>
-                        <button class="buttons"  onclick="showOnDisplay('one')" value="1" type="button" id="one">1</button>
-                        <button class="buttons"  onclick="calculateVal('multiply')"value="x" type="button" id="multiply">x</button>
-                        <button class="buttons"  onclick="showOnDisplay('decimal')"  type="button" id="decimal">.</button>
-                        <button class="buttons"  onclick="calculateVal('equals')" value="=" type="button" id="equals">=</button>
-                        <button class="buttons"  onclick="showOnDisplay('zero')" value="0" type="button" id="zero">0</button>
-                        <button class="buttons"  onclick="calculateVal('divide')" value="/" type="button" id="divide">/</button>
-                        <button class="buttons"  onclick="showDefault()"; value="AC" type="button" id="clear">AC</button>
-                </div>
-            </div>
-           
+  <head>
+    <title>JavaScript Calculator</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body onload="showDefault()">
+    <div id="container">
+      <div id="main">
+        <div id="display"></div>
+        <div id="buttons">
+          <button
+            class="buttons"
+            onclick="showOnDisplay('nine')"
+            value="9"
+            type="button"
+            id="nine"
+          >
+            9
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('eight')"
+            value="8"
+            type="button"
+            id="eight"
+          >
+            8
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('seven')"
+            value="7"
+            type="button"
+            id="seven"
+          >
+            7
+          </button>
+          <button
+            class="buttons"
+            onclick="calculateVal('add')"
+            value="+"
+            type="button"
+            id="add"
+          >
+            +
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('six')"
+            value="6"
+            type="button"
+            id="six"
+          >
+            6
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('five')"
+            value="5"
+            type="button"
+            id="five"
+          >
+            5
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('four')"
+            value="4"
+            type="button"
+            id="four"
+          >
+            4
+          </button>
+          <button
+            class="buttons"
+            onclick="calculateVal('subtract')"
+            value="-"
+            type="button"
+            id="subtract"
+          >
+            -
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('three')"
+            value="3"
+            type="button"
+            id="three"
+          >
+            3
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('two')"
+            value="2"
+            type="button"
+            id="two"
+          >
+            2
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('one')"
+            value="1"
+            type="button"
+            id="one"
+          >
+            1
+          </button>
+          <button
+            class="buttons"
+            onclick="calculateVal('multiply')"
+            value="x"
+            type="button"
+            id="multiply"
+          >
+            x
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('decimal')"
+            type="button"
+            id="decimal"
+          >
+            .
+          </button>
+          <button
+            class="buttons"
+            onclick="calculateVal('equals')"
+            value="="
+            type="button"
+            id="equals"
+          >
+            =
+          </button>
+          <button
+            class="buttons"
+            onclick="showOnDisplay('zero')"
+            value="0"
+            type="button"
+            id="zero"
+          >
+            0
+          </button>
+          <button
+            class="buttons"
+            onclick="calculateVal('divide')"
+            value="/"
+            type="button"
+            id="divide"
+          >
+            /
+          </button>
+          <button
+            class="buttons"
+            onclick="showDefault()"
+            ;
+            value="AC"
+            type="button"
+            id="clear"
+          >
+            AC
+          </button>
         </div>
-        
-        <script src="script.js"></script>
-    </body>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
